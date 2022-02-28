@@ -117,11 +117,11 @@ def confirm(request):
         user.save()
         context = {
             'message_type': 'success',
-            'message': 'Вы успешно зарегестрировались'
+            'message': 'КрасаааууучиГ!'
         }
     except:
         context = {
             'message_type': 'danger',
-            'message': 'Ну ты и дебииииил - даже зарегаться не можешь...'
+            'message': 'Даааауууууунн....'
         }
     return render(request, 'message.html', context=context)
