@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+    <h1>Products List</h1>
+    {% for product in product_list %}
+        <a href="/product/{{ product.id }}/">Title : {{ product.title }}</a>
+        <p>Price : {{ product.price }}</p>
+        <p>Date End : {{ product.date_end }}</p>
+        <p>Category : {{ product.category.name }}</p>
+        <hr/>
+    {% endfor %}
+{% endblock %}
